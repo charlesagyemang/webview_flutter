@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'web_view_container.dart';
+//import 'dart:convert';
 
 class Home extends StatelessWidget {
-  static final links = [ ['https://google.com', 'Google'], ['https://pianoafrikonline.com', 'Pianoafrik'] ];
+  static final links = [
+    ['https://google.com', 'Google'],
+    ['https://pianoafrikonline.com', 'Pianoafrik']
+  ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -13,8 +18,9 @@ class Home extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children:
-                links.map((link) => _urlButton(context, link[0], link[1])).toList(),
+            children: links
+                .map((link) => _urlButton(context, link[0], link[1]))
+                .toList(),
           ),
         ),
       ),
