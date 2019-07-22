@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'web_view_container.dart';
-//import 'dart:convert';
 
 class Home extends StatelessWidget {
   static final links = [
-    ['https://google.com', 'Google'],
-    ['https://pianoafrikonline.com', 'Pianoafrik']
+    ['http://plineup.com/', 'PLU APP']
   ];
 
 
